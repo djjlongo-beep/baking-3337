@@ -1,0 +1,545 @@
+.dough-banner {
+  background:
+    linear-gradient(#fff8ed88, #fff8ed88),
+    var(--wood) center / cover;
+  padding: 30px 0 42px;
+  border-bottom: 1px solid var(--line);
+}
+.dough-banner .back-link {
+  margin-bottom: 25px;
+  color: #594633;
+}
+.dough-banner h1 {
+  font-size: clamp(36px, 4.3vw, 67px);
+  line-height: 1.03;
+  letter-spacing: -1.5px;
+  margin: 20px 0 18px;
+}
+.dough-banner h1 em {
+  color: var(--rust);
+}
+.dough-banner p {
+  font-size: 13px;
+  color: #5f4b39;
+}
+.dough-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 30px;
+  padding-top: 38px;
+  padding-bottom: 70px;
+  align-items: start;
+}
+.dough-controls {
+  display: grid;
+  gap: 22px;
+  min-width: 0;
+}
+.dough-panel {
+  padding: 27px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.dough-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 21px;
+}
+.dough-step > span:first-child {
+  color: var(--rust);
+  font-size: 11px;
+  border: 1px solid var(--line);
+  padding: 8px;
+}
+.dough-step h2 {
+  font-size: 29px;
+}
+.dough-step .dough-advanced {
+  font: 600 8px var(--font-body);
+  letter-spacing: 1px;
+  background: var(--sand);
+  padding: 6px;
+  margin-left: auto;
+}
+.dough-modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+.dough-modes button {
+  text-align: left;
+  padding: 14px 12px;
+  border: 1px solid var(--line);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+.dough-modes button small {
+  display: block;
+  font-size: 9px;
+  font-weight: 400;
+  margin-top: 7px;
+  line-height: 1.5;
+}
+.dough-modes button.active {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.dough-quantity {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 145px;
+  gap: 13px;
+  align-items: end;
+}
+.dough-field {
+  display: block;
+  min-width: 0;
+  font-size: 11px;
+}
+.dough-field > span {
+  display: block;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+.dough-field > div {
+  display: flex;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  border-radius: 3px;
+  align-items: center;
+}
+.dough-field input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  padding: 12px;
+  font-size: 19px;
+  color: var(--ink);
+}
+.dough-field > div > span {
+  padding-right: 13px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.dough-field > input {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  font-size: 13px;
+  height: 48px;
+}
+.dough-unit,
+.dough-pref-mode {
+  display: block;
+  font-size: 11px;
+}
+.dough-unit select,
+.dough-pref-mode select {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  min-height: 48px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 11px;
+  border-radius: 3px;
+}
+.dough-help {
+  font-size: 11px;
+  line-height: 1.75;
+  color: var(--muted);
+  margin-top: 14px;
+}
+.dough-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 17px 14px;
+  margin-top: 20px;
+}
+.dough-custom {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) 28px;
+  gap: 10px;
+  align-items: end;
+  margin-top: 20px;
+}
+.dough-remove {
+  min-height: 48px;
+  color: var(--rust);
+  padding: 4px;
+}
+.dough-add {
+  margin-top: 22px;
+  color: var(--rust);
+}
+.dough-warning {
+  background: #fcf0d8;
+  display: flex;
+  gap: 9px;
+  padding: 13px;
+  font-size: 11px;
+  margin-top: 15px;
+  line-height: 1.7;
+}
+.dough-preferment {
+  border: 1px solid var(--line);
+  margin-top: 12px;
+}
+.dough-preferment.enabled {
+  border-color: #b49371;
+}
+.dough-pref-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 14px;
+  cursor: pointer;
+  background: var(--paper);
+}
+.dough-pref-toggle input {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--rust);
+  cursor: pointer;
+}
+.dough-pref-toggle > span {
+  font-size: 13px;
+  font-weight: 500;
+}
+.dough-pref-toggle small {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 9px;
+}
+.dough-pref-content {
+  padding: 19px 15px;
+}
+.dough-pref-content .dough-field > span {
+  min-height: 33px;
+}
+.dough-pref-summary {
+  display: grid;
+  gap: 7px;
+  padding: 14px;
+  margin-top: 15px;
+  background: var(--paper);
+  font-size: 11px;
+}
+.dough-pref-summary strong {
+  font-weight: 600;
+}
+.dough-pref-summary small {
+  color: var(--muted);
+  font-size: 10px;
+}
+.dough-results {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  min-width: 0;
+  position: sticky;
+  top: 20px;
+}
+.dough-result-head {
+  padding: 27px 25px 20px;
+  border-bottom: 1px solid var(--line);
+}
+.dough-result-head h2 {
+  font-size: 40px;
+  margin-top: 17px;
+}
+.dough-result-head h2 em {
+  color: var(--rust);
+}
+.dough-total {
+  display: grid;
+  gap: 10px;
+  padding: 24px 25px;
+}
+.dough-total > span {
+  font-size: 11px;
+}
+.dough-total > strong {
+  font: 500 46px/1 var(--font-display);
+}
+.dough-total strong small {
+  font: 14px var(--font-body);
+}
+.dough-total > small {
+  font-size: 10px;
+  color: var(--muted);
+}
+.dough-table-scroll {
+  overflow-x: auto;
+  margin: 0 20px;
+}
+.dough-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+.dough-table caption {
+  text-align: left;
+  padding-bottom: 14px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.dough-table th,
+.dough-table td {
+  text-align: right;
+  padding: 13px 6px;
+  border-bottom: 1px solid var(--line);
+  font-variant-numeric: tabular-nums;
+}
+.dough-table th:first-child {
+  text-align: left;
+  overflow-wrap: anywhere;
+  max-width: 130px;
+}
+.dough-table thead th {
+  font-size: 9px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--muted);
+}
+.dough-table tbody th {
+  font-weight: 500;
+}
+.dough-table td:last-child,
+.dough-table th:last-child {
+  color: var(--rust);
+  background: #ede0cb55;
+}
+.dough-final-mix {
+  margin: 22px 20px 0;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+.dough-final-mix h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.dough-final-mix > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11px;
+  margin-top: 13px;
+}
+.dough-final-mix > div strong {
+  white-space: nowrap;
+  font-weight: 500;
+}
+.dough-final-mix p {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 15px;
+}
+.dough-copy {
+  display: flex;
+  width: calc(100% - 40px);
+  margin: 23px 20px 0;
+  font-size: 12px;
+}
+.dough-reset {
+  display: flex;
+  margin: 22px 20px;
+  font-size: 11px;
+  color: var(--rust);
+}
+.dough-method {
+  display: flex;
+  gap: 10px;
+  margin: 0 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+.dough-method p {
+  font-size: 10px;
+  line-height: 1.8;
+}
+.dough-source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 19px 20px 25px;
+  font-size: 9px;
+}
+.dough-source-links a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-decoration: underline;
+}
+.dough-errors {
+  margin: 22px 20px;
+  padding: 18px;
+  background: #f8e9dc;
+  color: #803e26;
+}
+.dough-errors h3 {
+  font-size: 28px;
+}
+.dough-errors ul {
+  padding-left: 18px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.dough-errors p {
+  font-size: 11px;
+}
+.dough-copy-fallback {
+  display: block;
+  font-size: 11px;
+  margin: 20px;
+}
+.dough-copy-fallback textarea {
+  display: block;
+  width: 100%;
+  min-height: 170px;
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  font: 11px/1.8 var(--font-body);
+}
+@media (max-width: 1150px) {
+  .header-inner {
+    gap: 18px;
+  }
+  .navigation {
+    gap: 14px;
+    font-size: 10px;
+  }
+  .dough-workspace {
+    gap: 20px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
+  }
+  .dough-panel {
+    padding: 21px;
+  }
+  .dough-step h2 {
+    font-size: 25px;
+  }
+  .dough-step .dough-advanced {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .dough-workspace {
+    grid-template-columns: 1fr;
+    max-width: 720px;
+  }
+  .dough-results {
+    position: static;
+  }
+  .dough-banner h1 {
+    font-size: 49px;
+  }
+  .navigation {
+    gap: 9px;
+    font-size: 9px;
+  }
+}
+@media (max-width: 650px) {
+  .navigation.open {
+    font-size: 15px;
+    gap: 10px;
+  }
+  .dough-banner {
+    padding: 24px 0 30px;
+  }
+  .dough-banner h1 {
+    font-size: 37px;
+    line-height: 1.05;
+    letter-spacing: -0.7px;
+  }
+  .dough-banner h1 em {
+    display: block;
+  }
+  .dough-banner p {
+    font-size: 12px;
+  }
+  .dough-workspace {
+    padding-top: 23px;
+    padding-bottom: 40px;
+    gap: 23px;
+  }
+  .dough-panel {
+    padding: 19px 15px;
+  }
+  .dough-step h2 {
+    font-size: 27px;
+  }
+  .dough-step {
+    gap: 9px;
+  }
+  .dough-quantity {
+    grid-template-columns: minmax(0, 1fr) 115px;
+    gap: 10px;
+  }
+  .dough-fields {
+    gap: 16px 10px;
+  }
+  .dough-field {
+    font-size: 10px;
+  }
+  .dough-field input {
+    font-size: 18px;
+    padding: 12px 9px;
+  }
+  .dough-fields .dough-field > span {
+    min-height: 30px;
+  }
+  .dough-modes button {
+    font-size: 11px;
+    padding: 12px 10px;
+  }
+  .dough-pref-toggle {
+    padding: 15px 11px;
+    gap: 8px;
+  }
+  .dough-pref-toggle > span {
+    font-size: 12px;
+  }
+  .dough-pref-toggle small {
+    font-size: 8px;
+  }
+  .dough-pref-content {
+    padding: 16px 11px;
+  }
+  .dough-custom {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr) 24px;
+    gap: 6px;
+  }
+  .dough-custom .dough-field > span {
+    min-height: 30px;
+  }
+  .dough-custom .dough-field > input {
+    font-size: 12px;
+  }
+  .dough-table-scroll {
+    margin: 0 12px;
+  }
+  .dough-table {
+    font-size: 9px;
+  }
+  .dough-table th,
+  .dough-table td {
+    padding: 12px 4px;
+  }
+  .dough-table thead th {
+    font-size: 8px;
+  }
+  .dough-table th:first-child {
+    max-width: 80px;
+  }
+  .dough-result-head {
+    padding: 24px 20px;
+  }
+}
